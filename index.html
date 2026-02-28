@@ -3,57 +3,111 @@
 <head>
     <title>Jigisha Midde - Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             background-color: #f4f6f9;
         }
-        header {
-            background: #2c3e50;
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(to right, #1f2937, #111827);
             color: white;
-            padding: 40px;
             text-align: center;
+            padding: 100px 20px;
         }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .btn {
+            text-decoration: none;
+            background: #38bdf8;
+            color: black;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid #38bdf8;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* NORMAL SECTIONS */
         section {
             padding: 30px;
             margin: 20px;
             background: white;
             border-radius: 10px;
         }
+
         h2 {
             color: #2c3e50;
         }
+
         footer {
             text-align: center;
             padding: 20px;
             background: #ecf0f1;
         }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
-<header>
-    <section class="hero">
+<!-- HERO SECTION -->
+<section class="hero">
     <h1>Hi, I'm <span>Jigisha Midde</span></h1>
-    <p>Computer Science Student | Fresher</p>
+    <p>Computer Science Student | Python Developer | AI & Flask Enthusiast</p>
 
     <div class="buttons">
         <a href="#projects" class="btn">View Projects</a>
         <a href="resume.pdf" download class="btn btn-outline">Download Resume</a>
     </div>
 </section>
-</header>
 
+<!-- ABOUT -->
 <section>
     <h2>About Me</h2>
-    <p>I am a Computer Science student.
-       I am Fresher.
-       I am Python Programmer.
+    <p>
+        I am a Computer Science Engineering student passionate about Python development,
+        Artificial Intelligence and backend technologies. I enjoy building real-world
+        projects and continuously improving my problem-solving skills.
     </p>
 </section>
 
-<section>
+<!-- PROJECTS -->
+<section id="projects">
     <h2>Projects</h2>
     <ul>
         <li><b>AI Resume Parser</b> – Built using Python & Flask to extract skills and education details.</li>
@@ -61,24 +115,30 @@
     </ul>
 </section>
 
+<!-- SKILLS -->
 <section>
     <h2>Skills</h2>
-<ul>
-    <li><b>Programming Language:</b> Python</li>
-    <li><b>Core Concepts:</b> Data Structures, Algorithms, SQL</li>
-    <li><b>Problem Solving:</b> Logical Thinking and Coding Practice</li>
-    <li><b>Tools:</b> GitHub</li>
-</ul>
+    <ul>
+        <li><b>Programming Language:</b> Python</li>
+        <li><b>Core Concepts:</b> Data Structures, Algorithms, SQL</li>
+        <li><b>Problem Solving:</b> Logical Thinking and Coding Practice</li>
+        <li><b>Tools:</b> GitHub</li>
+    </ul>
 </section>
 
+<!-- CONTACT -->
 <section>
     <h2>Contact</h2>
     <p>Email: jigisham252@gmail.com</p>
-    <p>LinkedIn: https://www.linkedin.com/in/jigisha-midde-546a3a298</p>
+    <p>LinkedIn: 
+        <a href="https://www.linkedin.com/in/jigisha-midde-546a3a298" target="_blank">
+        linkedin.com/in/jigisha-midde
+        </a>
+    </p>
 </section>
 
 <footer>
-    © 2026 Jigisha M
+    © 2026 Jigisha Midde
 </footer>
 
 </body>
